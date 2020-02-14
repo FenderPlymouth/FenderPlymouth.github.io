@@ -5,7 +5,10 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%; }
+	width: 75%; 
+	background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 25px;}
 
 .row {
 	content: "";
@@ -36,6 +39,13 @@ body {
 	margin: 0;
 	background-color: #ddd; }
 
+
+h4 {
+	color: #081108;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	font-family: Papyrus, fantasy;
+	font-size: 20px; }
+	
 ul.nav {
 	list-style-type: none;
 	margin: 0;
@@ -45,13 +55,14 @@ ul.nav {
 	background-color: #f1f1f1;
 	position: fixed;
 	height: 100%;
-	overflow: auto;}
+	overflow: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
 
 ul.nav li a {
 	display: block;
 	color: #081108;
 	padding: 8px 16px;
-	text-decoration: none;}
+	text-decoration: none; }
  
 ul.nav li a.active {
 	background-color: #2e6930;
@@ -59,24 +70,25 @@ ul.nav li a.active {
 
 ul.nav li a:hover:not(.active) {
 	background-color: #555;
-	color: white;}
+	color: white; }
 
 div.content {
 	margin-left: 25%;
 	padding: 1px 16px;
-	height: 1000px;}
+	height: 1000px; }
 
 @media screen and (max-width: 1590px) {
 	ul.nav {
 		width: 100%;
     	height: auto;
-    	position: relative;}
+    	position: relative; }
   
 	ul.nav li a {
 		float: left;
-		padding: 15px;}
+		padding: 15px; }
   
-div.content {margin-left: 0;}}
+	div.content {
+		margin-left: 0;}}
 
 @media screen and (max-width: 415px) {
 	ul.nav li a {
