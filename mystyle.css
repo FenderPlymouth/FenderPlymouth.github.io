@@ -96,5 +96,7 @@ div.content {
 
 @media screen and (max-width: 415px) {
 	ul.nav li a {
+		position: relative;
+		top:0;
 		text-align: center;
 		float: none;}}
