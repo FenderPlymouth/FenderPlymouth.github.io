@@ -83,9 +83,8 @@ div.content {
 @media screen and (max-width: 1590px) {
 	ul.nav {
 		width: 100%;
-    		height: auto;
-		position: fixed;
-		top:0;}
+		height: auto;
+		position: fixed; }
   
 	ul.nav li a {
 		float: left;
@@ -95,8 +94,8 @@ div.content {
 		margin-left: 0;}}
 
 @media screen and (max-width: 415px) {
-	ul.nav li a {
-		position: relative;
-		top:0;
+	ul.sidenav {
+		position: relative; }
+	ul.sidenav li a {
 		text-align: center;
-		float: none;}}
+		float: none; }}
