@@ -18,22 +18,34 @@
 .columnLeft {
 	float: left;
 	width: 50%;
-	padding: 20px; }
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px; }
 
 .altColumnLeft {
 	float: left;
 	width: 70%;
-	padding: 20px; }
-
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px; }
+	
 .columnRight {
 	float: right;
 	width: 50%;
-	padding: 20px; }  
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px; }
 
 .altColumnRight {
 	float: right;
 	width: 30%;
-	padding: 20px; }
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px; }
     		
 body {
 	margin: 0;
