@@ -59,7 +59,8 @@ ul.nav {
 	position: fixed;
 	height: 100%;
 	overflow: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); 
+	top: 0; }
 
 ul.nav li a {
 	display: block;
@@ -80,7 +81,7 @@ div.content {
 	padding: 1px 16px;
 	height: 100%}
 
-@media screen and (max-width: 1590px) {
+@media screen and (max-width: 900px) {
 	ul.nav {
 		width: 100%;
 		height: auto;
@@ -93,7 +94,7 @@ div.content {
 	div.content {
 		margin-left: 0;}}
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 400px) {
 	ul.sidenav {
 		position: relative; }
 	ul.sidenav li a {
