@@ -95,6 +95,11 @@ h6 {
 	padding-bottom: 10px;
 	padding-left: 15px; }
 
+.content {
+  margin-left: 240px;
+  padding: 1px 16px;
+  height: 100%; }
+
 ul.nav {
 	list-style-type: none;
 	margin: 0;
@@ -120,11 +125,6 @@ ul.nav li a.active {
 ul.nav li a:hover {
   background-color: #555;
   color: white; }
-
-.content {
-  margin-left: 240px;
-  padding: 1px 16px;
-  height: 100%; }
 
 @media screen and (max-width: 1200px) {
   ul.nav {
