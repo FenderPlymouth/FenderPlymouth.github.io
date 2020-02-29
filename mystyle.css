@@ -106,9 +106,12 @@ h6 {
 .blogNav {
 	list-style-type: circle;
   width: 100%;
-  position: fixed;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 55px;
+	background-color: #ddd; }
 
 a:link {
 	color: #2e6930;	}
