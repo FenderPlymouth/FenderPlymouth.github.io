@@ -1,6 +1,9 @@
 * {
 	box-sizing: border-box; }
 
+html {
+	scroll-behavior: smooth; }
+
 body {
 	margin: 0;
 	background-color: #ddd; }
@@ -99,6 +102,22 @@ h6 {
   margin-left: 240px;
   padding: 1px 16px;
   height: 100%; }
+
+.blogNav {
+	list-style-type: circle;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  overflow: auto; }
+
+a:link {
+	color: #2e6930;	}
+
+a:visited {
+	color: #2e6930; }
+
+a:active {
+	color: grey; }
 
 ul.nav {
 	list-style-type: none;
