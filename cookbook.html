@@ -25,92 +25,133 @@
       <h4>
         Create a web page with atleast 3 of your favorite recipes! The recipe book should have a table of contents linking to each recipe below, using internal links. Each recipe should have a table for the ingredients, a list of details, a list and/or paragraphs of the steps required, and a picture of what the food looks like. If you use recipes from the internet, be sure to add a link to the website.<br><br>
 
+        Below is my example of what your should have on your own page.<br><br>
+
         Be sure to add links to add a navigation bar and links to all of your other pages!!!
       </h4>
 
+      <img class="line" src="images/line.png">
+
       <div class="row">
         <ol>
-          <li>Potato Soup</li>
+          <li><a href="#soup">Potato Soup</a></li>
           <li>French Dressing</li>
           <li>Hawaiian Rolls</li>
           <li>Peach Cobbler</li>
         </ol>
     </div>
 
-    <table style="width: 50%;" border="2" cellpadding="2">
-      <tr>
-        <td style="width: 62%;">
-          <strong>Ingreident</strong>
-        </td>
+    <img class="line" src="images/line.png">
 
-        <td style="width: 35%;">
-          <strong>Quantity</strong>
-        </td>
-      </tr>
+    <div class="recipeRow">
+      <div class="recipeColumn" id="soup">
+        <h2>
+          <u>Cheesy Ham and Potatoe Soup</u>
+        </h2>
 
-      <tr>
-        <td style="width: 62%;">
-          Potatoes O'Brien with Onions and Peppers
-        </td>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ornare nulla. Quisque molestie et neque nec tristique. Donec varius est a scelerisque viverra. Integer aliquet lacinia ligula quis facilisis. Vivamus fermentum leo dolor. Curabitur at laoreet posuere, vulputate ligula ut, laoreet felis. Donec eget accumsan quam, vitae lacinia ligula. Duis sed tellus purus. Mauris consequat nulla sagittis neque vulputate, vel accumsan felis auctor. Etiam sit amet aliquam quam. Aenean consectetur cursus ex quis lobortis. Donec hendrerit purus arcu, id faucibus purus pharetra sed.
+        </p>
+      </div>
 
-        <td style="width: 35%;">
-          2 bags <br>
-          (28oz each)
-        </td>
-      </tr>
+      <div class="recipeColumn">
+        <img class="pic" style="width: 50%" src="images/soup.jpg" alt="A bowl of cheesy ham and potato soup">
+      </div>
+    </div>
 
-      <tr>
-        <td style="width: 62%;">
-          Vegtible Broth
-        </td>
+    <div class="recipeRow">
+      <div class="recipeColumn">
+        <table border="2" cellpadding="2" style="margin-left: auto; margin-right: auto;">
+          <tr>
+            <td class="left">
+              <h3>Ingredient</h3>
+            </td>
 
-        <td style="width: 35%;">
-          3 cans <br>
-          (14.5oz each)
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 62%;">
-          Cream of Celary Soup
-        </td>
+            <td class="right">
+              <h3>Quantity</h3>
+            </td>
+          </tr>
 
-        <td style="width: 35%;">
-          2 cans <br>
-          (10.5oz each)
-        </td>
-      </tr>
+          <tr>
+            <td class="left">
+              Potatoes O'Brien with Onions and Peppers
+            </td>
 
-      <tr>
-        <td style="width: 62%;">
-          Cream Cheese (softened)
-        </td>
+            <td class="right">
+              2 bags <br>
+              (28oz each)
+            </td>
+          </tr>
 
-        <td style="width: 35;">
-          2 packages <br>
-          (8oz each)
-        </td>
-      </tr>
+          <tr>
+            <td class="left">
+              Vegtible Broth
+            </td>
 
-      <tr>
-        <td style="width: 62%;">
-          Diced Ham
-        </td>
+            <td class="right">
+              3 cans <br>
+              (14.5oz each)
+            </td>
+          </tr>
+          <tr>
+            <td class="left">
+              Cream of Celary Soup
+            </td>
 
-        <td style="width: 35%;">
-          packages <br>
-          (8oz each)
-        </td>
-      </tr>
+            <td class="right">
+              2 cans <br>
+              (10.5oz each)
+            </td>
+          </tr>
 
-      <tr>
-        <td style="width: 62%;">
-          Shredded Cheese
-        </td>
+          <tr>
+            <td class="left">
+              Cream Cheese (softened)
+            </td>
 
-        <td style="width: 35;">
-          optional
-        </td>
-      </tr>
-    </table>
+            <td class="right">
+              2 packages <br>
+              (8oz each)
+            </td>
+          </tr>
+
+          <tr>
+            <td class="left">
+              Diced Ham
+            </td>
+
+            <td class="right">
+              packages <br>
+              (8oz each)
+            </td>
+          </tr>
+
+          <tr>
+            <td class="left">
+              Shredded Cheese
+            </td>
+
+            <td class="right">
+              optional
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="recipeColumn">
+        <h3>
+          Instructions
+        </h3>
+        <ol>
+          <li>Combine all the ingredients except for the cream cheese and shredded cheese into a large crock pot.</li>
+          <br>
+          <li>Mix well and cook on low for 6 hours.</li>
+          <br>
+          <li>Add the cream cheese and continue to cook for 45 minutes.</li>
+          <br>
+          <li>Stir well and spoon into bowls. Add shredded cheee if desired.</li>
+        </ol>
+      </div>
+    </div>
   </body>
 </html>
