@@ -1,9 +1,63 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-    <head>
-    </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-    <body>
-    </body>
+  <body>
+    <header>
+      <h1>Mr. Fender's CSP Example Portfolio Website</h1>
+    </header>
+    <navigation>
+      <div class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="dropdownFunction()">Portfolio ▼</button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#blog">Blog</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarFunction()">&#9776;</a>
+      </div>
+    </navigation>
+
+    <main>
+      <div class="left60">
+        <img src="https://i0.wp.com/s3.amazonaws.com/production-wordpress-assets/blog/wp-content/uploads/2013/03/wisdom_of_the_ancients-1.png?resize=485%2C270&ssl=1" alt="computer science comic">
+      </div>
+      <div class="right40">
+        <p>
+          Welcome to my example portfolio website! As we make our way through the year we will learn many things like how to create websites using HTML5, CSS, and Javascript. You will make use this knowledge to create your own personal websites to act as a portfolio to show off to the world your skills. As we move on past basic web design we will learn the programing language Python. With it, you will be able to develop games, apps, and tools. You will be able to post these projects to your website as well.
+        </p>
+        <p>
+          While there will be a few basic requirments to prove that you have mastered certain skills, it is my hope that the pages on this website and the programs yous post to your portfolio will be unique to you, giving you the opportunity to express your creativity and show off your new skills!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      Footer Content — Header.com 2020
+    </footer>
+
+    <script>
+      function navbarFunction() {
+        event.stopPropagation();
+        document.getElementById("navbar").classList.toggle("responsive");
+      }
+
+      function dropdownFunction() {
+        event.stopPropagation();
+        document.getElementById("dropdown-content").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        document.getElementById("navbar").classList.remove("responsive");
+        document.getElementById("dropdown-content").classList.remove("show");
+      }
+    </script>
+  </body>
 </html>
