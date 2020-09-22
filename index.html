@@ -2,62 +2,82 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <header>
-      <h1>Mr. Fender's CSP Example Portfolio Website</h1>
-    </header>
-    <navigation>
-      <div class="navbar" id="navbar">
+    <div class="header">
+      <h1>Mr. Fender</h1>
+    </div>
+
+    <div class="navbar">
+      <div class="navlinks" id="topnav">
         <a href="#home" class="active">Home</a>
         <a href="#about">About Me</a>
         <div class="dropdown">
-          <button class="dropbtn" onclick="dropdownFunction()">Portfolio ▼</button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+          <button class="dropdown_button" onclick="window.location.href='#python';">Python Projects ▾</button>
+            <div class="dropdown_content" id="programs">
+              <a href="#grade">Grade Calculater</a>
+              <a href="#game">Game</a>
+              <a href="#gui">Command Line GUI</a>
+              <a href="#encoder">Encoder</a>
+              <a href="#create">AP Create Task</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown_button" onclick="window.location.href='#other';">Other Projects ▾</button>
+            <div class="dropdown_content" id="programs">
+              <a href="#build">PC Build Guide</a>
+              <a href="#customer">Customer Site</a>
             </div>
         </div>
         <a href="#blog">Blog</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarFunction()">&#9776;</a>
+        <a href="#contact">Contact Me</a>
+        <a href="javascript:void(0);" style="font-size:13px;" class="icon" onclick="navbarFunction()">&#9776;</a>
       </div>
-    </navigation>
+    </div>
 
-    <main>
-      <div class="left60">
-        <img src="https://i0.wp.com/s3.amazonaws.com/production-wordpress-assets/blog/wp-content/uploads/2013/03/wisdom_of_the_ancients-1.png?resize=485%2C270&ssl=1" alt="computer science comic">
-      </div>
-      <div class="right40">
+    <div class="main">
+      <div class="col60">
         <p>
           Welcome to my example portfolio website! As we make our way through the year we will learn many things like how to create websites using HTML5, CSS, and Javascript. You will make use this knowledge to create your own personal websites to act as a portfolio to show off to the world your skills. As we move on past basic web design we will learn the programing language Python. With it, you will be able to develop games, apps, and tools. You will be able to post these projects to your website as well.
         </p>
         <p>
           While there will be a few basic requirments to prove that you have mastered certain skills, it is my hope that the pages on this website and the programs yous post to your portfolio will be unique to you, giving you the opportunity to express your creativity and show off your new skills!
         </p>
+        <p>
+          Just like any of the other projects we do in class, I encourage you to look at the source code and feel free to utilize any snippets you want. HOWEVER...<u>you must include coments in your code that provides a direct link to where you got the code, and a detialed description of what the code does.</u> If you can't explain the code in enough detail so Mrs. Fender understands what its function is, then you do not have a firm enough understanding to use it yourself.
+        </p>
       </div>
-    </main>
+      <div class="col40">
+        <img src="images/josh_bw.png" alt="Black and white image of Mr. Fender standing in front of a chalk board filled with equations.">
+      </div>
+    </div>
 
-    <footer>
-      Footer Content — Header.com 2020
-    </footer>
+    <div class="footer">
+      <p>
+        Copyright © 2018-2020 by Josh Fender. All rights reserved.
+      </p>
+    </div>
 
     <script>
       function navbarFunction() {
-        event.stopPropagation();
-        document.getElementById("navbar").classList.toggle("responsive");
-      }
+        var x = document.getElementById("topnav");
+        if (x.className === "navlinks") {
+          x.className += " responsive";} 
+        else {
+          x.className = "navlinks";}}
 
-      function dropdownFunction() {
-        event.stopPropagation();
-        document.getElementById("dropdown-content").classList.toggle("show");
-      }
 
-      window.onclick = function(event) {
-        document.getElementById("navbar").classList.remove("responsive");
-        document.getElementById("dropdown-content").classList.remove("show");
-      }
-    </script>
+      window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky + 30) {
+            navbar.classList.add("sticky")}
+          else {
+            navbar.classList.remove("sticky");}}
+  </script>
   </body>
 </html>
