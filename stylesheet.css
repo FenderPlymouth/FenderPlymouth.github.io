@@ -177,7 +177,7 @@ img {
 
 .quote {
   width: 90%;
-  margin: 30px auto auto 30px;
+  margin: 30px auto;
   border: 2px solid rgb(0, 0, 105);
   border-radius: 15px 25px;
   overflow: hidden;}
