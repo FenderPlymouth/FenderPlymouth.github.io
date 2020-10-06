@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Catamaran:wght@300&display=swap');
 
 body {
-  margin: 0;}
+  margin: 0;
+  background-color: #f5f5ff;}
 
 
 
@@ -10,11 +11,11 @@ body {
 .header {
   background-image: url('images/night_sky.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin: auto;
-  padding: 75px 0;}
+  padding: 30px 0;}
 
 h1 {
   overflow: hidden;
@@ -53,16 +54,16 @@ h1:after {
 
 
 
-
 .navbar {
-  display: flex;
+  display: block;
   background-color: #243b7e;
-  overflow: hidden;}
+  overflow: hidden;
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  margin-bottom: 12px;}
 
 .navlinks {
   width: 100%;
-  overflow: hidden;
-  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);}
+  overflow: hidden;}
 
 .navlinks a {
   float: left;
@@ -113,9 +114,6 @@ h1:after {
   z-index: 1;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);}
 
-.dropdown:hover .dropdown_content {
-  display: block;}
-
 .dropdown_content a {
   float: none;
   color: black;
@@ -128,50 +126,78 @@ h1:after {
   background-color: #ddd;
   color: black;}
 
-.show {
-  display: block;}
+.dropdown_content.show {
+  display: block;
+  transition: 0.5s;}
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;}
 
-.sticky + .main {
-  padding-top: 50px;}
 
 
 
 .main {
   background-color: #f5f5ff;
+  display: block;}
+
+.row {
   display: flex;}
 
 .col40 {
-  flex: 1;
+  flex: 4;
   margin: auto;
-  flex-basis: 40%;
   padding-left: 20px;
   padding-right: 20px;}
 
+.col50 {
+  flex: 5;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;}
+  
 .col60 {
-  flex: 1;
+  flex: 6;
   margin: auto;
-  flex-basis: 60%;
   padding-left: 20px;
   padding-right: 20px;}
 
-
-
-
-
+.col100 {
+  flex: 10;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;}
 
 img {
-  width: 90%;
+  width: 100%;
   min-width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);}
 
+.quote {
+  width: 90%;
+  margin: 15px auto auto auto;
+  border: 2px solid rgb(0, 0, 105);
+  border-radius: 15px 25px;
+  overflow: hidden;}
+
+h2 {
+  color: rgb(0, 0, 105);
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  font-family: 'Bad Script', cursive;
+  font-size: 2vw;
+  font-style: italic;}
+
+h3 {
+  padding-right: 5%;
+  color: rgb(0, 0, 105);
+  text-align: right;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.75vw;
+  font-style: italic;}
 
 
 
@@ -188,8 +214,7 @@ img {
 
 
 
-
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 650px) {
   .navlinks a:not(.active), .dropdown_button {
     display: none;}
 
@@ -227,9 +252,18 @@ img {
   .main {
     display: block;}
   
-  .dropdown:hover .dropdown_content {
-    display: none;}
-
-  .dropdown_content.responsive {
+  .row {
     display: block;}
+  
+  h2 {
+    text-shadow: none;
+    font-size: 2.25vw;}
+  
+  h3 {
+    text-shadow: none;
+    font-size: 2.25vw;}
+
+  .quote {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 105);}
 }
