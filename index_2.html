@@ -5,18 +5,76 @@
         <title>All about Mr. Fender</title>
         <meta charset="UTF-8">
         <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+        <style>
+            body{
+                margin: 0;
+                background-color: rgb(240, 255, 240);}
+
+            h1{
+                overflow: hidden;
+                color: rgb(0, 65, 0);
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 48px;}
+            
+            h2{
+                color: rgb(0, 65, 0);
+                text-align: center;
+                font-size: 24px;}
+
+            .header{
+                margin: auto;
+                padding: 2px 0;
+                background-color: rgb(100, 175, 100);}
+
+            .navbar{
+                text-align: center;
+                margin: auto;
+                padding: 2px 0;
+                background-color: rgb(0, 65, 0);
+                color: rgb(240, 255, 240);}
+
+            .other_info{
+                background-color: rgb(0, 0, 65);}
+            
+            img{
+                margin: auto;
+                width: 40%;
+                float: right;}
+
+            #other_title{
+                background-color: rgb(100, 100, 175);
+                color: rgb(0, 0, 65);
+                margin: 0;
+                padding: 6px 0;}
+
+            #other{
+                background-color: inherit;
+                float: left;
+                width: 50%;
+                margin: auto;
+                color: rgb(240, 240, 255);}
+
+        </style>
     </head>
 
     <body>
-        <h1>Mr. Fender's Homepage</h1>
+        <div class="header">
+            <h1>---- Mr. Fender's Homepage ----</h1>
+        </div>
+
+        <div class="navbar">
+            <p>this is where the navbar will go eventually...</p>
+        </div>
 
         <h2><strong><em>Why are you taking CSP?</em></strong></h2>
-            <p>
+            <p id="why"> 
                 Instead of answering why I am taking CSP I am going to talk about why I am teaching it. I think that computer science is an extremly import life skill to have atleast some basic knowledge of. As we have seen so fat in class, computers are <em>everywhere</em>! Having some basic knowledge of what is going on whenever you use your device or an understanding of the kind of digital information you are sharing with the world is critical. 
             </p>
 
         <h2><strong><em>What are you hoping to lean by the end of the class?</em></strong></h2>
-            <p>
+            <p id="what">
                 By the end of the class, I am hoping that you will be able to do the following:
                 <ul>
                     <li>Describe how computers work from the lowest level of abstraction (electrons moving through wires) to the heighest (the user interface that you interact with)</li>
@@ -27,19 +85,18 @@
                 </ul>
             </p>
 
-        <h2><strong><em>What other information do you want to provide?</em></strong></h2>
-            <p>
+        <div class="other_info">
+            <h2 id="other_title"><strong><em>What other information do you want to provide?</em></strong></h2>
+            
+            <p id="other">
                 This part does not need to bee too crazy for now. As we add more pages to our websites you will create an <em>"About Me"</em> page where you will move this information to. You will also take a personality quiz and pust some information about what it thinks your personality type is on that page as well.
-            </p>
-            <p>
+            </br></br>
                 For now just focus on the things that you like to do both in and out of school. Whats your favorite class? Do you play any sports or do you have a favorite team? WHat computer games do you like to play if any? (FYI...I would crush all of you in Civ V or Age of Empires...)
+            </br></br>
+                The last thing you need on your webpage for now is a picture of some kind. It can be of anything you want. In my case I put my favorite picture of my little girl below this section.
             </p>
 
-            <p>
-                The last thing you need on your webpage for now is a picture of some kind. It can be of anything you want. In my case I put my favorite picture of my little girl below this section.
-                </br>
-                </br>
-                <img src="emmalyn.jpg" alt="Mr Fenders daughter, Emmalyn, age 5 months.">
-            </p>
+            <img src="emmalyn.jpg" alt="Mr Fenders daughter, Emmalyn, age 5 months.">
+        </div>
     </body>
 </html>
