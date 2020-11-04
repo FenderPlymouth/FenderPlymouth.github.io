@@ -62,7 +62,7 @@ h1:after {
   margin-bottom: 12px;}
 
 .navlinks {
-  width: 100%;
+  width: auto%;
   overflow: hidden;}
 
 .navlinks a {
