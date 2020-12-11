@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 body {
-    /*background-color: rgb(3, 20, 60);
+    background-color: rgb(3, 20, 60);
     background-image: url('background.jpg');
     background-attachment: fixed;
     background-position: top;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-color: rgb(70,180,240);
     background-size: 100%;
     margin: 0;
+    position: relative;
+    height: 100vh;
+    padding-bottom: 2.5rem;
 }
 
 h1 {
@@ -30,8 +33,7 @@ h1 {
     display: block;
     background-color: rgb(2,20,80);
     overflow: hidden;
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
-
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .7);
 }
 
 .nav_links {
@@ -101,4 +103,17 @@ img {
     display: block;
     width: 90%;
     min-width: 200px;
-    margin: 16px auto;}
+    margin: 16px auto;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .7);
+}
+
+.footer {
+    display: block;
+    background-color: rgb(2,20,80);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
